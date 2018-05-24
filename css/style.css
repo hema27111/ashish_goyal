@@ -408,6 +408,13 @@ input, textarea{
 		font-size:14px;
 	}
 	/*END EDUCATION AND JUMBOTRON*/
+
+	/*Footer*/
+	.quote button{
+		width:91%;
+		margin-left:12px;
+	}
+*/
 }
 
  /****** Extra small devices only ****/
@@ -452,14 +459,14 @@ input, textarea{
 	}
 	.jumbotron p{
 		font-size:14px;
-		margin: auto -30px 5px 20px;
+		margin: auto -35px 5px 20px;
 	}
 	/*END JUMBOTRON*/
 
 	/*EDUCATION AND APPOINMENT*/
 	#home-tiles{
-		margin-right:18px;
-		width:85%;
+		margin-right:15px;
+		width:88%;
 	}
 	.page-header h1{
 		font-size: 14px;
@@ -502,4 +509,20 @@ input, textarea{
 		border-bottom: -30px;
 	}
 	/*END EDUCATION AND APPOINTMENT*/
+	/*FOOTER*/
+	.panel-footer{
+		margin-right: -50px;
+	}
+	.panel-footer section hr{
+    	width: 50%;
+  	}
+	.quote, h1.text-center {
+		width: 150%;
+	    margin-left: 30px;
+	    padding-right: 0px;
+	    margin-right: -40px;
+	}
+	.quote button{
+		margin-left:14px;
+	}
 }
