@@ -302,6 +302,7 @@ input, textarea{
 	margin-top: 5px;
 	margin-bottom:5px;
 	width:90%;
+	color: black;
 }
 .quote button{
 	display: block;
