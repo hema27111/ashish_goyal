@@ -1,7 +1,6 @@
 body {
   font-size: 16px;
-  
-  background-color: #ffffff;
+  background-color:  #e9f0f5;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
   margin:0;
@@ -82,7 +81,6 @@ body {
 	color: #000000;
 }
 .jumbotron{
-	background-color: white;
 	margin-top: -30px;
 	margin-bottom: -40px;
 }
@@ -169,6 +167,79 @@ body {
 	margin-bottom: 0px;
 }
 /*END EDUCATION AND APPOINMENT*/
+
+/*AWARDS*/
+#awardss h1{
+	border-top: 2px dashed black;
+	border-bottom: 2px dashed black;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+#awardss p{
+	font-size: 16px;
+}
+#timeline{
+	background:url(../images/line.png) repeat-y 50% 0;
+	min-height: 700px;
+	margin: 20px 0 20px 0;
+	color: #000;
+}
+.tl-block{
+	position: relative;
+	width: 100%;
+	min-height:25px;
+	margin-bottom: 0px;
+}
+.tl-year{
+	background: url(../images/point-big.png) no-repeat 50% 0;
+	display: block;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.tl-year div{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 20px;
+	text-align: center;
+}
+.tl-event{
+	background: url(../images/point-small.png) no-repeat top center;
+	margin:auto;
+	width: 100%;
+	overflow: hidden;
+	visibility: visible;
+}
+.tl-event > div{
+	width: 45%;
+	position: relative;
+}
+.tl-event div div{
+	background: #fff;
+	border-radius: 10px;
+	padding: 10px;
+}
+.tl-event div.event-r{
+	float: right;
+	background: url(../images/arrow-left.png) no-repeat 0 0;
+}
+.tl-event div.event-l{
+	float: left;
+	background: url(../images/arrow-right.png) no-repeat top right;
+}
+.tl-event div.event-r div{
+	margin-left: 20px;
+}
+.tl-event div.event-l div{
+	margin-right: 20px;
+}
+/*END AWARDS*/
 
 /* FOOTER */
 footer{
@@ -541,3 +612,6 @@ input, textarea{
 		margin-left:14px;
 	}
 }
+
+
+
