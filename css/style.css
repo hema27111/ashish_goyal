@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  background-color:  #e9f0f5;
+ /* background-color:  #d8cbcb;*/
   color: #fff;
   font-family: 'Oxygen', sans-serif;
   margin:0;
@@ -79,10 +79,12 @@ body {
 }
 .jumbotron h4{
 	color: #000000;
+	background: #fff;
 }
 .jumbotron{
 	margin-top: -30px;
 	margin-bottom: -40px;
+	background: #fff;
 }
 .jumbotron h4{
 	font-size: 20px;
@@ -170,48 +172,83 @@ body {
 
 /*AWARDS*/
 #awardss h1{
-	border-top: 2px dashed black;
-	border-bottom: 2px dashed black;
-	background-color: #000;
-	color: #fff;
 	text-align: center;
 	font-family: 'Playfair Display', serif;
+	margin-top: -10px;
 }
+/*End Awards heading*/
+.ribbon {
+ font-size: 20px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 50%;
+    
+ position: relative;
+ background: #000;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #000;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #000 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+/*End Awards heading*/
+
 #awardss p{
 	font-size: 16px;
+	color: #000;
 }
 #timeline{
+	width:100%;
+	padding-left: 40px;
+	padding-right: 40px;
 	background:url(../images/line.png) repeat-y 50% 0;
 	min-height: 700px;
-	margin: 20px 0 20px 0;
+	margin: 10px 0 0px 0;
 	color: #000;
 }
 .tl-block{
 	position: relative;
 	width: 100%;
-	min-height:25px;
+	min-height:40px;
 	margin-bottom: 0px;
-}
-.tl-year{
-	background: url(../images/point-big.png) no-repeat 50% 0;
-	display: block;
-	width: 70px;
-	height: 70px;
-	text-align: center;
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 0px;
-}
-.tl-year div{
-	color: #fff;
-	font-size: 14px;
-	font-weight: bold;
-	padding-top: 20px;
-	text-align: center;
+	
 }
 .tl-event{
-	background: url(../images/point-small.png) no-repeat top center;
-	margin:auto;
+	background: url(../images/point-shape1.png) no-repeat top center;
+	margin-top:10px;
 	width: 100%;
 	overflow: hidden;
 	visibility: visible;
@@ -220,8 +257,13 @@ body {
 	width: 45%;
 	position: relative;
 }
+.tl-event h3{
+	margin-top:0px;
+	color: #0a0a7c;
+	font-weight: bold;
+}
 .tl-event div div{
-	background: #fff;
+	background: #eee;
 	border-radius: 10px;
 	padding: 10px;
 }
@@ -281,7 +323,7 @@ a p{
 #call-btn > a {
     font-size: 1em;
     display: block;
-    /*margin: 0 20px;*/
+    margin: 0 20px;
     padding: 10px;
     color: #ff7877;
     margin-left: 0px;
@@ -324,12 +366,12 @@ ul li{
 	margin-left: 00px;
 }
 
-/* Add a hover effect if you want */
+/* Add a hover effect if you want 
 .fa:hover {
     opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
+/* Set a specific color for each brand 
 
 /* Facebook */
 .fa-facebook {
@@ -438,6 +480,12 @@ input, textarea{
 	#home-tiles{
 		width:90%;
 	}
+	#timeline{
+	width:100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	background:url(../images/line.png) repeat-y 50% 0;
+	}
 }
 
 /****** Small devices only ****/
@@ -487,6 +535,15 @@ input, textarea{
 	}
 	/*END EDUCATION AND JUMBOTRON*/
 
+	/*AWARDS*/
+	#timeline{
+	width:100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0;
+	background:url(../images/line.png) repeat-y 50% 0;
+	}
+	/*END AWARDS*/
 	/*Footer*/
 	.quote button{
 		width:91%;
@@ -587,6 +644,53 @@ input, textarea{
 		border-bottom: -30px;
 	}
 	/*END EDUCATION AND APPOINTMENT*/
+
+	/*AWARDS*/
+	#awardss h1{
+		font-size: 14px !important;
+		margin-top: 10px;
+		margin-left: 90px;
+	}
+	.ribbon{
+		width: 60%;
+	}
+	#timeline{
+	width:100%;
+	padding-left: 30px;
+	padding-right: 0px;
+	background:url(../images/line.png) repeat-y 18% 0;
+	}
+
+	.tl-event{
+	background: url(../images/point-shape1.png) no-repeat top left;
+	width: 100%;
+	overflow: hidden;
+	visibility: visible;
+	}
+	.tl-event h3{
+		font-size: 16px;
+		float: left;
+		color: #0a0a7c;
+		font-weight: bold;
+	}
+	.tl-event p{
+		clear: left;
+	}
+	.tl-event > div{
+	width: 85%;
+	height: 30%;
+	position: relative;
+	}
+	.tl-event div.event-r, .tl-event div.event-l{
+	float: right;
+	background: url(../images/arrow-left.png) no-repeat 0 0;
+	}
+	.tl-event div.event-r div, .tl-event div.event-l div{
+	margin-left: 20px;
+	}
+
+	/*END AWARDS*/
+
 	/*FOOTER*/
 	.panel-footer{
 		margin-right: -50px;
