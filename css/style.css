@@ -33,22 +33,22 @@ body {
 	margin-bottom: 10px;
 }
 .navbar-brand h1 { 
-  font-family: 'Lora', serif;
-  color: #ffffff;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 20px;
-  margin-left: 0;
-  padding-left: 0;
-  float: left;
+    font-family: 'Lora', serif;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    float: left;
 }
 .navbar .navbar-collapse {
-	 padding: 10px;
+	padding: 10px;
 }
 .navbar .navbar-nav {
-	 float: none;
+	float: none;
 }
 .navbar-nav { 
 	margin: 0px;
@@ -56,7 +56,7 @@ body {
 .navbar .nav > li a {
 	height: 80px; 
 	text-align: center;
-	 font-family: 'Lora', serif;
+	font-family: 'Lora', serif;
 	padding-top: 30px; 
 	font-weight: 600; 
 	color: #FFFFFF; 
@@ -179,61 +179,61 @@ body {
 /*End Awards heading*/
 .ribbon {
  font-size: 20px !important;
- /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
 
- width: 50%;
-    
- position: relative;
- background: #000;
- color: #fff;
- text-align: center;
- padding: 1em 2em; /* Adjust to suit */
- margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+	width: 50%;
+	position: relative;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 1em 2em; /* Adjust to suit */
+	margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 .ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- border: 1.5em solid #000;
- z-index: -1;
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -1em;
+	border: 1.5em solid #000;
+	z-index: -1;
 }
 .ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
+	left: -2em;
+	border-right-width: 1.5em;
+	border-left-color: transparent;
 }
 .ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
+	right: -2em;
+	border-left-width: 1.5em;
+	border-right-color: transparent;
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #000 transparent transparent transparent;
- bottom: -1em;
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #000 transparent transparent transparent;
+	bottom: -1em;
 }
 .ribbon .ribbon-content:before {
- left: 0;
- border-width: 1em 0 0 1em;
+	left: 0;
+	border-width: 1em 0 0 1em;
 }
 .ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
-}
+	right: 0;
+	border-width: 1em 1em 0 0;
+	}
 /*End Awards heading*/
 
 #awardss p{
 	font-size: 16px;
 	color: #000;
 }
+.container{
+	width: 85%;
+}
 #timeline{
 	width:100%;
-	padding-left: 40px;
-	padding-right: 40px;
 	background:url(../images/line.png) repeat-y 50% 0;
 	min-height: 700px;
 	margin: 10px 0 0px 0;
@@ -243,12 +243,12 @@ body {
 	position: relative;
 	width: 100%;
 	min-height:40px;
-	margin-bottom: 0px;
-	
+	margin-bottom: 0px;	
 }
 .tl-event{
 	background: url(../images/point-shape1.png) no-repeat top center;
-	margin-top:10px;
+	display: block;
+	margin:auto;
 	width: 100%;
 	overflow: hidden;
 	visibility: visible;
@@ -257,15 +257,10 @@ body {
 	width: 45%;
 	position: relative;
 }
-.tl-event h3{
-	margin-top:0px;
-	color: #0a0a7c;
-	font-weight: bold;
-}
 .tl-event div div{
 	background: #eee;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 5px;
 }
 .tl-event div.event-r{
 	float: right;
@@ -281,6 +276,16 @@ body {
 .tl-event div.event-l div{
 	margin-right: 20px;
 }
+.tl-event time{
+	background: #f26011;
+	color: #000;
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 5px;
+	font-family: 'Lora', serif;
+	font-weight: bold;
+}
+
 /*END AWARDS*/
 
 /* FOOTER */
@@ -480,12 +485,6 @@ input, textarea{
 	#home-tiles{
 		width:90%;
 	}
-	#timeline{
-	width:100%;
-	padding-left: 10px;
-	padding-right: 10px;
-	background:url(../images/line.png) repeat-y 50% 0;
-	}
 }
 
 /****** Small devices only ****/
@@ -535,15 +534,6 @@ input, textarea{
 	}
 	/*END EDUCATION AND JUMBOTRON*/
 
-	/*AWARDS*/
-	#timeline{
-	width:100%;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin: 0;
-	background:url(../images/line.png) repeat-y 50% 0;
-	}
-	/*END AWARDS*/
 	/*Footer*/
 	.quote button{
 		width:91%;
@@ -654,39 +644,41 @@ input, textarea{
 	.ribbon{
 		width: 60%;
 	}
+	.container{
+		width: 100%;
+	}
 	#timeline{
-	width:100%;
-	padding-left: 30px;
-	padding-right: 0px;
-	background:url(../images/line.png) repeat-y 18% 0;
+		background:url(../images/line.png) repeat-y 30px 0;
 	}
-
+	.tl-block{
+		margin-bottom: : 20px;
+		margin-top: 20px;
+	}
 	.tl-event{
-	background: url(../images/point-shape1.png) no-repeat top left;
-	width: 100%;
-	overflow: hidden;
-	visibility: visible;
-	}
-	.tl-event h3{
-		font-size: 16px;
-		float: left;
-		color: #0a0a7c;
-		font-weight: bold;
-	}
-	.tl-event p{
-		clear: left;
+		background: url(../images/point-shape1.png) no-repeat 16px 0;
 	}
 	.tl-event > div{
-	width: 85%;
-	height: 30%;
-	position: relative;
+		width: 80%;
+		position: relative;
 	}
-	.tl-event div.event-r, .tl-event div.event-l{
-	float: right;
-	background: url(../images/arrow-left.png) no-repeat 0 0;
+	.tl-event div div{
+		padding: 10px;
+	}
+	.tl-event div.event-l{
+		float: right;
+		background: url(../images/arrow-left.png) no-repeat 0 0;
 	}
 	.tl-event div.event-r div, .tl-event div.event-l div{
-	margin-left: 20px;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.tl-event div div h3{
+		font-size:12px;
+		float:left;
+	}
+	.tl-event p{
+		margin-top: 35px;
+		clear:both;
 	}
 
 	/*END AWARDS*/
