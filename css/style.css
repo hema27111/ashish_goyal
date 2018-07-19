@@ -856,7 +856,7 @@ input, textarea{
 		position: relative;
 		left:26px;
 	}
-	.modal-content .modal-body ol li h1{
+	#public1 ol li h1{
 		font-size:10px;
 	}
 	/*END PUBLICATIONS*/
