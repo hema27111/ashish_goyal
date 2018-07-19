@@ -785,22 +785,25 @@ input, textarea{
 
 	/*EDUCATION AND APPOINMENT*/
 	#home-tiles{
-		width:107%;
+		width:100%;
 	}
 	#home-tiles div h1{
 		font-size: 30px;
 	}
 	#home-tiles div hr{
-		width: 60%;
-		border: 1px solid black;
+		width: 40%;
+		/*border: 1px solid black;*/
 	}
-	.page-header h1{
-		font-size: 14px;
+	#home-tiles .container .page-header h1{
+		font-size: 20px;
 		margin-bottom:-10px;
 	}
 	.container .edu .appo{
 		/*margin-top:-30px;*/
 		text-align: center;
+	}
+	.container #appo1 span{
+		margin-bottom: 20px;
 	}
 	.head1{
 		margin-bottom:-10px;
@@ -828,13 +831,27 @@ input, textarea{
 		margin-top:0px;
 		margin-bottom:0px;
 	}
-	hr{
-		border: 1px dashed black;
-		width:60%;
+	#home-tiles div div hr .visible-xs{
+		border: 1px dotted black;
+		width:40%;
 		border-top:-10px;
 		border-bottom: -30px;
 	}
 	/*END EDUCATION AND APPOINTMENT*/
+
+	/*	PUBLICATIONS*/
+	#publicationss1 .heading3 h1{
+		font-size: 30px;
+	}
+	#publicationss1 .container .row{
+		margin-left: 40px;
+	}
+	button.btn.btn-info{
+	margin: 10px;
+	width: 100%;
+	height: auto;
+}
+	/*END PUBLICATIONS*/
 	/*Academics*/
 	.adm h3{
 		text-align:left; 
