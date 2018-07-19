@@ -786,6 +786,7 @@ input, textarea{
 	/*EDUCATION AND APPOINMENT*/
 	#home-tiles{
 		width:100%;
+		margin-left: 26px;
 	}
 	#home-tiles div h1{
 		font-size: 30px;
@@ -850,9 +851,20 @@ input, textarea{
 	margin: 10px;
 	width: 100%;
 	height: auto;
-}
+	}
+	.modal-content{
+		position: relative;
+		left:26px;
+	}
 	/*END PUBLICATIONS*/
 	/*Academics*/
+	#academicss1{
+		width: 100%;
+		margin-left: 26px;
+	}
+	#academicss1 .heading4 h1{
+		font-size:30px;
+	}
 	.adm h3{
 		text-align:left; 
 	}
@@ -863,12 +875,12 @@ input, textarea{
 
 	/*AWARDS*/
 	#awardss h1{
-		font-size: 14px !important;
+		font-size: 26px !important;
 		margin-top: 10px;
-		margin-left: 90px;
+		text-align: center;
 	}
-	.ribbon{
-		width: 60%;
+	#awardss hr{
+		width: 70%;
 	}
 	.container{
 		width: 100%;
