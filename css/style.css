@@ -1,10 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
 body {
   font-size: 16px;
  /* background-color:  #d8cbcb;*/
   color: #fff;
   font-family: 'Oxygen', sans-serif;
   margin:0;
-  padding: 0;
+  padding: 0px;
+  padding-top: 70px;
+  /*background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);*/
 }
 .page-header{
 	border-bottom: none;
@@ -20,24 +24,35 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* HEADER */
-.navbar  { 
+h1 h2 h3 h4 h5 h6{
+	margin: 0px;
+	padding: 0px;
+}
+a.heading_top{
+	display:block;
+	position:relative;
+	top:-100px;
+	visibility:hidden
+}
+/*********HEADER***********/
+.navbar{ 
 	border: 0px; 
-	background-color: #222222; 
+	height: auto;
+	background-color: #222222;
+	background-color: #077376; 
 	border-radius: 0;
 	margin-right: -50px;
 }
 .navbar-brand{
 	padding-bottom: 25px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 .navbar-brand h1 { 
     font-family: 'Lora', serif;
     color: #ffffff;
     font-size: 1.5em;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
     text-shadow: 1px 1px 1px #222;
     margin-top: 20px;
     margin-left: 0;
@@ -61,6 +76,9 @@ body {
 	font-weight: 600; 
 	color: #FFFFFF; 
 }
+#navbar-example .container #collapsable-nav ul li a span{
+	margin: 0px;
+}
 .navbar .nav > li a:hover, .navbar .nav > li a:focus { 
 	color: #999999; 
 }
@@ -71,36 +89,33 @@ body {
   clear: both;
   margin-top: -30px;
 }
+
 /*END HEADER*/
 
 /* JUMBOTRON */
 #main-content{
-	margin-top: 40px;
+	margin-top: 0px;
 }
-.jumbotron h4{
-	color: #000000;
+
+.jumbotron h1{
+	margin-top: 10px;
+	color: #3380FF;
 	background: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 100px;
+	font-family: 'Kavivanar', cursive;
 }
 .jumbotron{
-	margin-top: -30px;
-	margin-bottom: -40px;
+	margin-top: 10px;
+	margin-bottom: -20px;
 	background: #fff;
 }
-.jumbotron h4{
-	font-size: 20px;
-	font-family: 'Kavivanar', cursive;
-}
-/*h4,h1,h2,h3,h5,h6,p,b{
-	color: black;
-	font-weight: bold;
-	font-family: 'Kavivanar', cursive;
-	font-size: 18px;
-}*/
 .jumbotron img{
 	border-radius: 60%;
 	/*position: relative;
 	left: 10%;*/
-	margin-top: 10px;
+	margin-top: 40px;
 }
 .jumbotron p{
 	color: black;
@@ -109,120 +124,284 @@ body {
 	font-family: 'Kavivanar', cursive;	 
 	font-weight: normal;
 }
+.jumbotron #menu-outer{
+	height: auto;
+	border: 2px solid black;
+	background: grey;
+}
+.jumbotron .sub_heading1{
+	background: grey;
+	color: black;
+	padding: 20px auto 20px 60px;
+}
+.jumbotron ul{
+	list-style-type: square;
+}
+.jumbotron ul li a{
+	color: black;
+	padding: 0 20px;
+	list-style-type: square;
+	display:inline-block;
+	margin-bottom: 5px;
+	text-decoration: none;
+	text-align: justify-all;
+}
 /*END JUMBOTRON*/
 
 /* Education and Appointment */
 #home-tiles{
-	width:80%;
-	border-top: 1px dotted black;
-	margin-bottom:-50px;
+	width: 100%;
+	margin-bottom:10px;
 	padding: 0px;
+	background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+}
+div .heading2{
+	padding-top: 90px;
+	color: #3380FF;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 0.5px;
+}
+div .heading2 h1{
+	font-size: 50px;
+	font-weight: 400;
+}
+div .heading2 hr{
+	width: 40%;
+	border-bottom: 1px solid grey;
+}
+.container{
+	width: 80%;
 }
 .page-header{
-	background-color: black;
-	display: inline-block;
-	color:white;
+	/*background-color: black;
+	display: inline-block;*/
 	font-family: 'Lora', serif;
 	font-size:16px;
 	font-weight: bold;
-
 }
 .page-header h1{
 	margin-top: 0;
-	font-size: 20px;
-	padding: 10px 10px 10px 10px;
+	text-align: center;
+	font-size: 30px;
+	padding: 10px 10px 1px 10px;
 	margin-bottom: 0px;
+	color: black;
 }
-.edu{
+.page-header h1 span{
+	/*background-color: black;*/
+	padding:15px;
+	font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  font-style:normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+.page-header h1 span:before, .page-header h1 span:after{
+	content: '\00A7';
+	 display: inline-block;
+	 -webkit-transform: rotate(90deg);
+	 -moz-transform: rotate(90deg);
+	 -o-transform: rotate(90deg);
+	 -ms-transform: rotate(90deg);
+	 transform: rotate(90deg);
+	/* opacity: 0.2;*/
+	 margin: 0 0.6em;
+	 font-size: 0.5em;
+}
+.edu, .appo{
 	color: #000;
 }
-/*.head1, .head2{
-	color:white;
-	margin:0;
-	letter-spacing: 2px;
-  	padding: 8px 20px;
-  	font-size: 11px;
-  	z-index: 100;
-  	position: absolute;
-  	top: -1px
-}*/
+.edu, .appo{	
+	clear:both;
+	color:#000;
+}
+.edu h2, .appo h2{
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+}
+.edu h4, .appo h4{
+	margin: 0px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+}
+.edu h3, .appo h3{
+	margin-top: 10px;
+	font-weight: 100;
+}
 .container .row .row-first{
 	padding-left: 0px;
 	/*padding: 20px;*/
 }
-.edu, .appo{
-	font-family: 'Playfair Display', serif;
-	clear:both;
-	color:#000;
-
-}
-.head1{
-	float:left;
+.head1, .head2{
 	color: #fff;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-.head2{
-	float:right;
-	color: #fff;
-	margin-top: 0px;
-	margin-bottom: 0px;
+.edu hr{
+	border: 2px dotted black;
+	width: 60%;
 }
 /*END EDUCATION AND APPOINMENT*/
 
-/*AWARDS*/
-#awardss h1{
-	text-align: center;
-	font-family: 'Playfair Display', serif;
-	margin-top: -10px;
+/*PUBLICATION*/
+ #publicationss1 .container{
+	width: 80%;
+	margin-bottom:0px;
+	padding: 0px;
 }
-/*End Awards heading*/
-.ribbon {
- font-size: 20px !important;
-	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+div .heading3{
+	color: #3380FF;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 0.5px;
+}
+div .heading3 h1{
+	font-size: 50px;
+	font-weight: 400;
+}
+div .heading3 hr{
+	width: 40%;
+	border-bottom: 1px solid grey;
+}
+#publicationss1 div .row{
+	margin-bottom: 30px;
+}
+/* The Modal (background) */
+button.btn.btn-info{
+	margin: 22px;
+	width: 29%;
+	height: 100px;
+	color: white;
+	border: #962713;
+	background-color: #962713;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+  	transition: all 0.5s;
+}
+button.btn.btn-info span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-	width: 50%;
-	position: relative;
-	background: #000;
-	color: #fff;
+button.btn.btn-info span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button.btn.btn-info:hover span {
+  padding-right: 25px;
+}
+
+button.btn.btn-info:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.modal-dialog{
+	width: 85%;
+}
+.modal-header{
+	background: grey;
+}
+/* Modal Content/Box */
+.modal-title{
+	font-size: 20px;
+	padding: 10px;
 	text-align: center;
-	padding: 1em 2em; /* Adjust to suit */
-	margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
-.ribbon:before, .ribbon:after {
-	content: "";
-	position: absolute;
-	display: block;
-	bottom: -1em;
-	border: 1.5em solid #000;
-	z-index: -1;
+#public1 ol{
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: justify;
 }
-.ribbon:before {
-	left: -2em;
-	border-right-width: 1.5em;
-	border-left-color: transparent;
+#public1 ol li h1{
+	font-size: 15px;
 }
-.ribbon:after {
-	right: -2em;
-	border-left-width: 1.5em;
-	border-right-color: transparent;
+.modal-body a h1, .modal-body ol{
+	font-size: 15px;
+	color: #000;
 }
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-	content: "";
-	position: absolute;
-	display: block;
-	border-style: solid;
-	border-color: #000 transparent transparent transparent;
-	bottom: -1em;
+.modal-body ol li a{
+	text-decoration: none;
 }
-.ribbon .ribbon-content:before {
-	left: 0;
-	border-width: 1em 0 0 1em;
+.modal-body ol li:hover, modal-body ol li:active{
+	color: red;
 }
-.ribbon .ribbon-content:after {
-	right: 0;
-	border-width: 1em 1em 0 0;
-	}
+.modal-body ol li a h1:hover, .modal-body ol li a h1:active {
+	text-decoration: none;
+	color: red;
+}
+.modal-footer{
+	background: grey;
+	height: 70px;
+}
+button.btn.btn-default{
+	margin-bottom: 40px;
+}
+
+/*END PUBLICATIONS*/
+
+/*ACADEMICS*/
+div#academicss1{
+	width: 100%;
+	margin-bottom:10px;
+	padding: 0px;
+	background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+}
+div .heading4{
+	color: #3380FF;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 0.5px;
+}
+div .heading4 h1{
+	font-size: 50px;
+	font-weight: 400;
+}
+div .heading4 hr{
+	width: 40%;
+	border-bottom: 1px solid grey;
+}
+/*#academicss .head3{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}*/
+/*END ACADEMIC*/
+
+/*AWARDS*/
+#awardss{
+	width: 100%;
+	margin-bottom:50px;
+	padding: 0px;
+}
+#awardss div h1{
+	margin-top: -20px;
+}
+section .heading5{
+	color: #3380FF;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 0.5px;
+}
+section .heading5 h1{
+	font-size: 50px;
+	font-weight: 400;
+}
+section .heading5 hr{
+	width: 40%;
+	border-bottom: 1px solid grey;
+}
 /*End Awards heading*/
 
 #awardss p{
@@ -483,7 +662,11 @@ input, textarea{
 		font-size:14px;
 	}
 	#home-tiles{
-		width:90%;
+		width:100%;
+	}
+	button.btn.btn-info{
+		width: 28.5%;
+		height: 100px;
 	}
 }
 
@@ -491,7 +674,7 @@ input, textarea{
 @media(min-width: 768px) and (max-width: 991px){
 	/*Header*/
 	#navbar-example .container{
-		width:87%;
+		width:90%;
 	}
 	/*.navbar-brand h1{
 		margin-left: -70px;
@@ -503,13 +686,13 @@ input, textarea{
 	}*/
 	/*JuMBOTRON*/
 	.jumbotron{
-		margin-top: -40px;
+		margin-top: 10px;
 	}
 	.jumbotron img{
 		width: 300px;
 		height: 350px;
 		margin-left: -15px;
-		margin-top: 0px;
+		margin-top: 20px;
 	}
 	.jumbotron p{
 		font-size:15px;
@@ -519,7 +702,7 @@ input, textarea{
 
 	/*EDUCATION AND APPOINMENT*/
 	#home-tiles{
-		width:90%;
+		width:100%;
 	}
 	h2{
 		font-size: 16px;
@@ -533,7 +716,10 @@ input, textarea{
 		font-size:14px;
 	}
 	/*END EDUCATION AND JUMBOTRON*/
-
+	button.btn.btn-info{
+		width: 27%;
+		height: 100px;
+	}
 	/*Footer*/
 	.quote button{
 		width:91%;
@@ -543,16 +729,26 @@ input, textarea{
 
  /****** Extra small devices only ****/
 @media(max-width: 767px){
+	body{
+		width: 100%;
+	}
 	/*header*/
+	#navbar-example{
+		height: 60px;
+	}
 	.navbar-brand h1{
 		margin-top: 0px;
-		margin-left:10px;
+		text-align: center;
+		margin-left: 40px;
 		margin-bottom: 10px;
 	}
 	.navbar-header button.navbar-toggle {	
-    	margin-top: -47px;
-    	margin-right: 40px;
+    	margin-top: -42px;
+    	margin-right: 100px;
 	}
+	.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    	border: 1.5px solid #000;
+}
 	#nav-list a {
 		color: #000000;
 		text-align: center;
@@ -589,9 +785,14 @@ input, textarea{
 
 	/*EDUCATION AND APPOINMENT*/
 	#home-tiles{
-		margin-left: 35px;
-		margin-right:15px;
-		width:90%;
+		width:107%;
+	}
+	#home-tiles div h1{
+		font-size: 30px;
+	}
+	#home-tiles div hr{
+		width: 60%;
+		border: 1px solid black;
 	}
 	.page-header h1{
 		font-size: 14px;
@@ -634,6 +835,14 @@ input, textarea{
 		border-bottom: -30px;
 	}
 	/*END EDUCATION AND APPOINTMENT*/
+	/*Academics*/
+	.adm h3{
+		text-align:left; 
+	}
+	.adm ol li{
+		list-style-type: disc;
+	}
+	/*End Academics*/
 
 	/*AWARDS*/
 	#awardss h1{

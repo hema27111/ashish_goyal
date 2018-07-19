@@ -12,15 +12,17 @@
     <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<!-- HEADER -->
+<!-- HEADER -->
 	<header>
-		<nav id="navbar-example" class="navbar navbar-default" role="navigation">
+		<nav id="navbar-example" class="navbar navbar-fixed-top navbar-default" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<div class="navbar-brand">
-		            	<a href="index.html"><h1>Ashish Goyal</h1></a>
+		            	<a href="index.html" id="logo"><h1>Ashish Goyal</h1></a>
 		          	</div>
 			
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -28,21 +30,24 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
+					</button> 
 				</div>
 				<div id="collapsable-nav" class="collapse navbar-collapse">
-			        <ul id="nav-list" class="nav navbar-nav navbar-right">
-			            <li><a href="academic.html">Academic</a></li>
-			            <li><a href="publication.html">Publications</a></li>
-			            <li><a href="#awardss">Awards</a></li>
-			            <li><a href="#contct">Contact</a></li>
-		        	</ul><!-- #nav-list -->
-	        	</div><!-- .collapse .navbar-collapse -->
+			        <ul id="nav-list menu" class="nav navbar-nav navbar-right">
+			            <li><a href="#experiencess"><span>Experiences</span></a></li>
+			            <li><a href="#experiencess"><span>Interest</span></a></li>
+					    <li><a href="#publicationss"><span>Publications</span></a></li>
+					    <li><a href="#academicss"><span>Academic</span></a></li>
+					    <li><a href="#awardss"><span>Awards</span></a></li>
+					    <li><a href="#contct"><span>Contact</span></a></li>
+		        	</ul> <!-- #nav-list-->
+	        	</div><!--collapse .navbar-collapse-->
 			</div>					
 		</nav>
 	</header>
+<!-- END OF HEADER  -->
 
-	<!-- JUMBOTRON -->
+<!-- JUMBOTRON -->
 	<div id="main-content" class="container-fluid">
 		<div class="jumbotron">
 			<div class="row">
@@ -50,239 +55,530 @@
 					<img src="images/ashish.png" class="imag" width="400px" height="400px">			
 				</div>
 				<div class=" col-md-7 col-sm-7 col-xs-12 row">
-					<h4 class="head3">Hello! I'm Ashish</h4>
+					<h1 class="heading1">About me</h1>
 					<p class="para">				
 						I am passionate about biology, mathematics and computer, and their amalgamation to carry out research. My research focuses on applying mathematical, statistical and computational techniques to biological and medical related problems. Being interdisciplinary in nature, I employ dynamical modelling including ordinary, delay, stochastic and partial differential equations. Optimization techniques are also used extensively to estimate unknown parameters and to find optimal solutions. These mathematical models and techniques are widely used and have previously proved to be powerful tools for describing any biological, epidemiological, social, or ecological phenomena. I have applied these techniques to epidemiological and in vivo problems related to hepatitis B virus (HBV), hepatitis C virus (HCV) and hepatitis D virus (HDV). Currently, I am developing new temporal-spatial models of HCV. Within that context, I have developed a good understanding of the interaction between a viral infection and the immune system, as well as the spread of an infection through a community.​​
 					</p>
 				</div>
-			</div>			
+			</div>
+			<!-- <div id="menu-outer">
+				<h1 class="sub_heading1">Research Interests:</h1>
+				<ul id="horizontal-list">
+				    <li><a href="#">Applied Mathematics</a></li>
+					<li><a href="#">Mathematical Modeling</a></li>
+					<li><a href="#">Agent-Based Modeling</a></li>
+					<li><a href="#">Computational Modeling</a></li>
+					<li><a href="#">Statistical Modeling</a></li>
+					<li><a href="#">Mathematical Biology</a></li>
+					<li><a href="#">Numerical Simulations</a></li>
+					<li><a href="#">Infectious diseases</a></li>
+					<li><a href="#">Environmental and Ecological Systems</a></li>					
+					<li><a href="#">Hepatology</a></li>
+					<li><a href="#">Hepatitis viruses</a></li>
+					<li><a href="#">Optimization</a></li>
+					<li><a href="#">Epidemiology</a></li>
+					
+				</ul>
+			</div>		 -->	
 		</div>
 	</div>
-	 class="visible-lg visible-md visible-sm"
+
 	<!-- EDUCATION -->
-	<div id="home-tiles" class="container">
-		<div class="page-header head1">
-			<h1 id="edu1" class="head1">Education</h1>
-		</div>		
-		
-		<div class="row row-first edu">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h2 class="visible-lg visible-md visible-sm">Doctor of Philosophy</h2>				
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h2 class="visible-lg visible-md visible-sm">MS (by Research)</h2>				
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h2 class="visible-lg visible-md visible-sm">Bachelor of Technology</h2>				
-			</div>			
-		</div>
-
-		<div class="row row-first edu">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h4 class="visible-lg visible-md visible-sm">2013-2016</h4>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h4 class="visible-lg visible-md visible-sm">2010-2012</h4>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h4 class="visible-lg visible-md visible-sm">2006-2010</h4>
-			</div>
-		</div>
-
-		<div class="row row-first edu">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h3 class="visible-lg visible-md visible-sm">School of Mathematics and Statistics, University of New South Wales, Sydney</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h3 class="visible-lg visible-md visible-sm">The LNM Institute of Information Technology, Jaipur</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h3 class="visible-lg visible-md visible-sm">The LNM Institute of Information Technology, Jaipur</h3>
-			</div>			
-		</div>
-		
-		<div class="row row-first edu">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h3 class="visible-lg visible-md visible-sm">Applied Mathematics,</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h3 class="visible-lg visible-md visible-sm">Communication and Computer Engineering,<br/>CPI: 10 (on a scale of 10)</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Communication and Computer Engineering,<br/>CPI: 8.23 (on a scale of 10)</h3>
-			</div>			
-		</div>
-
-		<div class="row row-first edu">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm"><bold>Thesis Title: </bold>Mathematical Modeling of Hepatitis D virus</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm"><bold>Thesis Title: </bold>Ecotechnological Methods for water purification: A Modeling and Simulation Study</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm"></h3>
-			</div>			
-		</div>
-
-		<div class="row row-first edu">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm"><bold>Supervisors:</bold> Prof. John M. Murray and<br> Dr. Anna Cai</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm"><bold>Supervisors:</bold> Prof. J.B. Shukla and<br> Dr. Vikas Gupta</h3>	
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3></h3>
-			</div>
-		</div>
-
-		<!-- MOBILE Devices -->
-		<div class="row row-first edu">
-			<div class="col-xs-12">
-				<h2 class="visible-xs">Doctor of Philosophy</h2>
-				<h4 class="visible-xs">2013-2016</h4>
-				<h3 class="visible-xs">School of Mathematics and Statistics, University of New South Wales, Sydney</h3>
-				<h3 class="visible-xs">Applied Mathematics,</h3>
-				<h3 class="visible-xs"><bold>Thesis Title: </bold>Mathematical Modeling of Hepatitis D virus</h3>
-				<h3 class="visible-xs"><bold>Supervisors:</bold> Prof. John M. Murray and<br> Dr. Anna Cai</h3>
-			</div>
-			<hr class="">
-			<div  class="col-xs-12">
-				<h2 class="visible-xs">MS (by Research)</h2>
-				<h4 class="visible-xs">2010-2012</h4>
-				<h3 class="visible-xs">The LNM Institute of Information Technology, Jaipur</h3>
-				<h3 class="visible-xs">Communication and Computer Engineering,<br/>CPI: 10 (on a scale of 10)</h3>
-				<h3 class="visible-xs"><bold>Thesis Title: </bold>Ecotechnological Methods for water purification: A Modeling and Simulation Study</h3>
-				<h3 class="visible-xs"><bold>Supervisors:</bold> Prof. J.B. Shukla and<br> Dr. Vikas Gupta</h3>
-			</div>
+	<div id="home-tiles">
+		<a class=heading_top id="experiencess"></a>
+		<div class="heading2">
+			<h1>Experiences</h1>
 			<hr>
-			<div  class="col-xs-12">
-				<h2 class="visible-xs">Bachelor of Technology</h2>
-				<h4 class="visible-xs">2006-2010</h4>
-				<h3 class="visible-xs">The LNM Institute of Information Technology, Jaipur</h3>
-				<h3 class="visible-xs">Communication and Computer Engineering,<br/>CPI: 8.23 (on a scale of 10)</h3>
-			</div>			
 		</div>
+		<div class="container">
+			<div class="page-header head1">
+				<h1 id="edu1" class="head1"><span>Education</span></h1>
+			</div>	
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h2 class="visible-lg visible-md visible-sm">Doctor of Philosophy</h2>				
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h2 class="visible-lg visible-md visible-sm">MS (by Research)</h2>				
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h2 class="visible-lg visible-md visible-sm">Bachelor of Technology</h2>				
+				</div>			
+			</div>
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h4 class="visible-lg visible-md visible-sm">2013-2016</h4>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h4 class="visible-lg visible-md visible-sm">2010-2012</h4>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h4 class="visible-lg visible-md visible-sm">2006-2010</h4>
+				</div>
+			</div>
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h3 class="visible-lg visible-md visible-sm">School of Mathematics and Statistics, University of New South Wales, Sydney</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h3 class="visible-lg visible-md visible-sm">The LNM Institute of Information Technology, Jaipur</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h3 class="visible-lg visible-md visible-sm">The LNM Institute of Information Technology, Jaipur</h3>
+				</div>			
+			</div>
+			
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h3 class="visible-lg visible-md visible-sm">Applied Mathematics,</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h3 class="visible-lg visible-md visible-sm">Communication and Computer Engineering,<br/>CPI: 10 (on a scale of 10)</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Communication and Computer Engineering,<br/>CPI: 8.23 (on a scale of 10)</h3>
+				</div>			
+			</div>
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm"><bold>Thesis Title: </bold>Mathematical Modeling of Hepatitis D virus</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm"><bold>Thesis Title: </bold>Ecotechnological Methods for water purification: A Modeling and Simulation Study</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm"></h3>
+				</div>			
+			</div>
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm"><bold>Supervisors:</bold> Prof. John M. Murray and<br> Dr. Anna Cai</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm"><bold>Supervisors:</bold> Prof. J.B. Shukla and<br> Dr. Vikas Gupta</h3>	
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3></h3>
+				</div>
+				<hr class=" col-lg-4 col-md-4.5 col-sm-4">
+			</div>
+			
+
+			<!-- MOBILE Devices -->
+			<div class="row row-first edu">
+				<div class="col-xs-12">
+					<h2 class="visible-xs">Doctor of Philosophy</h2>
+					<h4 class="visible-xs">2013-2016</h4>
+					<h3 class="visible-xs">School of Mathematics and Statistics, University of New South Wales, Sydney</h3>
+					<h3 class="visible-xs">Applied Mathematics,</h3>
+					<h3 class="visible-xs"><bold>Thesis Title: </bold>Mathematical Modeling of Hepatitis D virus</h3>
+					<h3 class="visible-xs"><bold>Supervisors:</bold> Prof. John M. Murray and<br> Dr. Anna Cai</h3>
+				</div>
+				<hr class="visible-xs">
+
+				<div  class="col-xs-12">
+					<h2 class="visible-xs">MS (by Research)</h2>
+					<h4 class="visible-xs">2010-2012</h4>
+					<h3 class="visible-xs">The LNM Institute of Information Technology, Jaipur</h3>
+					<h3 class="visible-xs">Communication and Computer Engineering,<br/>CPI: 10 (on a scale of 10)</h3>
+					<h3 class="visible-xs"><bold>Thesis Title: </bold>Ecotechnological Methods for water purification: A Modeling and Simulation Study</h3>
+					<h3 class="visible-xs"><bold>Supervisors:</bold> Prof. J.B. Shukla and<br> Dr. Vikas Gupta</h3>
+				</div>
+				<hr class="visible-xs">
+
+				<div  class="col-xs-12">
+					<h2 class="visible-xs">Bachelor of Technology</h2>
+					<h4 class="visible-xs">2006-2010</h4>
+					<h3 class="visible-xs">The LNM Institute of Information Technology, Jaipur</h3>
+					<h3 class="visible-xs">Communication and Computer Engineering,<br/>CPI: 8.23 (on a scale of 10)</h3>
+				</div>			
+			</div>
+		</div>
+
+		<br class="visible-xs">
+		<br class="visible-xs">
+		<br class="visible-xs">
+		<!-- APPOINTMENTS -->
+
+		<div class="container">
+			<div class="page-header head2">
+				<h1 id="appo1"><span>Appointments</span></h1>
+			</div>
+
+			<div class="row row-first appo">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h2 class="visible-lg visible-md visible-sm">Postdoctoral Fellow</h2>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h2 class="visible-lg visible-md visible-sm">Research Assistant</h2>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h2 class="visible-lg visible-md visible-sm">Research Assistant</h2>
+				</div>			
+			</div>
+
+			<div class="row row-first appo">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h4 class="visible-lg visible-md visible-sm">2016-present</h4>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h4 class="visible-lg visible-md visible-sm">2016-2017</h4>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h4 class="visible-lg visible-md visible-sm">2011-2012</h4>
+				</div>			
+			</div>
+
+			<div class="row row-first appo">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Theoretical Biology and Biophysics,<br/>
+					Los Alamos National Laboratory, USA</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Loyola University, USA</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Nanyang Technological University, Singapore</h3>
+				</div>			
+			</div>
+			
+			<div class="row row-first appo">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Project Title: Modelling intra-host viral dynamics and spatial spread of viruses</h3>
+				</div>				
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Project Title: Develop mathematical models to explain HCV cure after very short duration of antiviral therapy in patients</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Project Title: Multi-way methods for handling missing data in medical questionnaire</h3>
+				</div>
+			</div>
+			<div class="row row-first appo">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Mentors: Prof. Alan S. Perelson and<br> Dr. Ruy M. Ribeiro</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Mentors: Dr. Harel Dahari</h3>
+
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Mentors: Asst. Prof. Justin Dauwels</h3>
+				</div>
+			</div>
+
+					<!-- MOBILE Devices -->
+			<div class="row row-first appo">
+				<div class="col-xs-12">
+					<h2 class="visible-xs">Postdoctoral Fellow</h2>
+					<h4 class="visible-xs">2016-present</h4>
+					<h3 class="visible-xs">Theoretical Biology and Biophysics,<br/>Los Alamos National Laboratory, USA</h3>
+					<h3 class="visible-xs">Project Title: Modelling intra-host viral dynamics and spatial spread of viruses</h3>
+					<h3 class="visible-xs">Mentors: Prof. Alan S. Perelson and <br> Dr. Ruy M. Ribeiro </h3>
+				</div>
+				<hr class="visible-xs">
+
+				<div  class="col-xs-12">
+					<h2 class="visible-xs">Research Assistant</h2>
+					<h4 class="visible-xs">2016-2017</h4>
+					<h3 class="visible-xs">Loyola University, USA</h3>
+					<h3 class="visible-xs">Project Title: Develop mathematical models to explain HCV cure after very short duration of antiviral therapy in patients</h3>
+					<h3 class="visible-xs">Mentors: Dr. Harel Dahari</h3>
+				</div>
+ 				<hr class="visible-xs">
+
+				<div  class="col-xs-12">
+					<h2 class="visible-xs">Research Assistant</h2>
+					<h4 class="visible-xs">2011-2012</h4>
+					<h3 class="visible-xs">Nanyang Technological University, Singapore</h3>
+					<h3 class="visible-xs">Project Title: Multi-way methods for handling missing data in medical questionnaire</h3>
+					<h3 class="visible-xs">Mentors: Asst. Prof. Justin Dauwels</h3>
+				</div>			
+			</div>
+		</div>
+		<br>
 	</div>
-
-	<br class="visible-xs">
-	<br class="visible-xs">
-	<br class="visible-xs">
-	<!-- APPOINTMENTS -->
-
-	<div id="home-tiles" class="container">
-		<div class="page-header head2">
-			<h1 id="appo1">Appointment</h1>
-		</div>
-		<div class="row row-first appo">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h2 class="visible-lg visible-md visible-sm">Postdoctoral Fellow</h2>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h2 class="visible-lg visible-md visible-sm">Research Assistant</h2>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h2 class="visible-lg visible-md visible-sm">Research Assistant</h2>
-			</div>			
-		</div>h3
-		<div class="row row-first appo">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h4 class="visible-lg visible-md visible-sm">2016-present</h4>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h4 class="visible-lg visible-md visible-sm">2016-2017</h4>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
-				<h4 class="visible-lg visible-md visible-sm">2011-2012</h4>
-			</div>			
-		</div>
-		<div class="row row-first appo">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Theoretical Biology and Biophysics,<br/>
-				Los Alamos National Laboratory, USA</dh3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Loyola University, USA</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Nanyang Technological University, Singapore</h3>
-			</div>			
-		</div>
-		
-		<div class="row row-first appo">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Project Title: Modelling intra-host viral dynamics and spatial spread of viruses</div>
-			</h3>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Project Title: Develop mathematical models to explain HCV cure after very short duration of antiviral therapy in patients</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Project Title: Multi-way methods for handling missing data in medical questionnaire</h3>
-			</div>
-		</div>
-		<div class="row row-first appo">
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Mentors: Prof. Alan S. Perelson and<br> Dr. Ruy M. Ribeiro</h3>
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Mentors: Dr. Harel Dahari</h3>
-
-			</div>
-			<div class=" col-lg-4 col-md-4.5 col-sm-4">
-				<h3 class="visible-lg visible-md visible-sm">Mentors: Asst. Prof. Justin Dauwels</h3>
-			</div>
-		</div>
-
-				<!-- MOBILE Devices -->
-		<div class="row row-first appo">
-			<div class="col-xs-12">
-				<h2 class="visible-xs">Postdoctoral Fellow</h2>
-				<h4 class="visible-xs">2016-present</h4>
-				<h3 class="visible-xs">Theoretical Biology and Biophysics,<br/>Los Alamos National Laboratory, USA</h3>
-				<h3 class="visible-xs">Project Title: Modelling intra-host viral dynamics and spatial spread of viruses</h3>
-				<h3 class="visible-xs">Mentors: Prof. Alan S. Perelson and <br> Dr. Ruy M. Ribeiro </h3>
-			</div>
-			<hr>
-			<div  class="col-xs-12">
-				<h2 class="visible-xs">Research Assistant</h2>
-				<h4 class="visible-xs">2016-2017</h4>
-				<h3 class="visible-xs">Loyola University, USA</h3>
-				<h3 class="visible-xs">Project Title: Develop mathematical models to explain HCV cure after very short duration of antiviral therapy in patients</h3>
-				<h3 class="visible-xs">Mentors: Dr. Harel Dahari</h3>
-			</div>
-			<hr>
-			<div  class="col-xs-12">
-				<h2 class="visible-xs">Research Assistant</h2>
-				<h4 class="visible-xs">2011-2012</h4>
-				<h3 class="visible-xs">Nanyang Technological University, Singapore</h3>
-				<h3 class="visible-xs">Project Title: Multi-way methods for handling missing data in medical questionnaire</h3>
-				<h3 class="visible-xs">Mentors: Asst. Prof. Justin Dauwels</h3>
-			</div>			
-		</div>
-	</div>
-	<br class="visible-xs">
-	<br class="visible-xs">
-	<br class="visible-xs">
 
 	<!-- PUBLICATIONS -->
-	<!--  <div>
-    	<iframe src="publication.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" >jj</iframe>
-  	</div>
-  	<br/>
+	
+	<!-- Trigger/Open The Modal -->
+	<div id="publicationss1">
+		<a class=heading_top id="publicationss"></a>
+		<div class="heading3">
+			<h1 >Publications</h1>
+			<hr>
+		</div>
+		<div class="container">
+			<div class="row">
+		  		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="vertical-align:middle"><span>JOURNALS</span></button>
 
-  	<div>
-	    <a href="page2.html" target="targetframe">Link to Page 2</a><br />
-	    <a href="page3.html" target="targetframe">Link to Page 3</a>
-  	</div> -->
+		  	<!-- Modal -->
+		  		<div class="modal fade" id="myModal" role="dialog">
+				    <div class="modal-dialog">		    
+				      <!-- Modal content-->
+				        <div class="modal-content">
+				        	<div class="modal-header">
+					          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+					            <h4 class="modal-title">JOURNALS</h4>
+				            </div>
+					        <div id="public1" class="modal-body">
+					          	<ol>
+						        	<li><a href="http://www.mdpi.com/1999-4915/9/11/350/html" target="_blank"><h1>A. Goyal, R.M. Ribeiro and A.S. Perelson, The role of infected cell proliferation in the clearance of acute HBV infection in humans, Viruses, 2017 (Accepted).</h1></a></li>
+						        	<li><a href="https://www.osti.gov/servlets/purl/1375871" target="_blank"><h1>A. Goyal, Y. Lurie, E.G. Meissner, M. Major, S.L. Uprichard, S.J. Cotler and H. Dahari, Modeling HCV cure after an ultra-short duration of therapy with direct acting agents, Antiviral Research, 144 (281-–285), 2017.</h1></a></li>
+						        	<li><a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJGW.2018.091948" target="_blank"><h1>A. Goyal and J.B. Shukla, Can methane oxidizing bacteria reduce global warming? A modelling study, International Journal of Global Warming, 2017 (Accepted) DOI: 10.1504/IJGW.2018.10006665.</h1></a></li>
+						        	<li><a href="https://www.osti.gov/servlets/purl/1358168" target="_blank"><h1>A. Goyal and J.M. Murray, Roadmap to control hepatitis B and hepatitis D epidemics in China, Journal of Theoretical Biology, 423 (41--52), 2017.</h1></a></li>
+						        	<li><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161978" target="_blank"><h1>A. Goyal and J.M. Murray, Modelling the Impact of Cell-to-cell Transmission in Hepatitis B Virus, PLOS ONE, 11(8): e0161978, 2016.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/pii/S0040580916300466" target="_blank"><h1>A. Goyal and J.M. Murray, Recognizing the impact of endemic hepatitis D virus on hepatitis B virus eradication, Theoretical Population Biology, 112 (60–-69), 2016.</h1></a></li>
+						        	<li><a href="https://link.springer.com/article/10.1007/s40261-016-0409-8" target="_blank"><h1>A. Goyal and J.M. Murray, Cost-effectiveness of peg-Interferon, Interferon and Oral nucleoside analogues in the treatment of chronic hepatitis B and D infections in China, Clinical Drug Investigation, 36(8) (637--48), 2016.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/pii/S0022519316001594" target="_blank"><h1>A. Goyal and J.M. Murray, Dynamics of in vivo hepatitis D virus infection, Journal of Theoretical Biology, 398 (9--19), 2016.</h1></a></li>
+						        	<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S1793524517500218" target="_blank"><h1>A. Goyal and P. Sharma, A model on the biological treatment of saline wastewater, International Journal of Biomathematics, DOI: 10.1142/S1793524517500218, 2016.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/pii/S0022519314006729" target="_blank"><h1>J.M. Murray and A. Goyal, In silico single cell dynamics of hepatitis B virus infection and clearance, Journal of Theoretical Biology, 388 (91--102), 2015.</h1></a></li>
+						        	<li><a href="https://aasldpubs.onlinelibrary.wiley.com/doi/full/10.1002/hep.27595" target="_blank"><h1>A. Goyal and J.M. Murray, Effect of interferon-alpha therapy on hepatitis D virus, Hepatology, 61(6) (2117--8), 2015. [5 citations]</h1></a></li>
+						        	<li><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110143" target="_blank"><h1>A. Goyal and J.M. Murray, The impact of vaccination and antiviral therapy on hepatitis B and hepatitis D epidemiology, PLOS One, 9(10): e110143, 2014.</h1></a></li>
+						        	<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mma.3368" target="_blank"><h1>A. Goyal, J.B. Shukla, A.K. Misra and A. Shukla, Modeling the role of government efforts in controlling extremism spreading in a society, Mathematical Methods in Applied Sciences, 38 (4300–-4316), 2015.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0096300314013010" target="_blank"><h1>A. Goyal, Tobacco Epidemics: Effect of marketing bans and awareness programs on its spread, Applied Mathematics and Computation, 247 (1030–-1051), 2014.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/pii/S0307904X14001668" target="_blank"><h1>A. Goyal, R. Sanghi, A.K. Misra and J.B. Shukla, Modeling and analysis of the removal of an organic pollutant from a water body using fungi, Applied Mathematical Modelling, 38(19) (4863–-4871), 2014.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/pii/S0307904X14001668" target="_blank"><h1>A.K. Misra, P.K. Tiwari, A. Goyal and J.B. Shukla, Modeling and analysis of the depletion of organic pollutants by bacteria with explicit dependence on dissolved oxygen, Natural Resource Modeling, 27 (258--273), 2014.</h1></a></li>
+						        	<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S1793524514500089" target="_blank"><h1>J.B. Shukla, A. Goyal, P.K. Tiwari and A.K. Misra, Modeling the role of dissolved oxygen-dependent bacteria on biodegradation of organic pollutants, International Journal of Biomathematics, DOI: 10.1142/S1793524514500089, 2014.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/pii/S2210600613001184" target="_blank"><h1>J.B. Shukla, A. Goyal, S. Singh and P. Chandra, Effects of habitat characteristics on the growth of carrier population leading to increased spread of typhoid fever: A Model, Journal of Epidemiology and Global Health, 4(2) (107--114), 2014.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/pii/S0025556413001247" target="_blank"><h1>A. Goyal, R. Sanghi, A.K. Misra and J.B. Shukla, A modeling study on the role of fungi in removing inorganic pollutants, Mathematical Biosciences, 244(2) (116--124), 2013.</h1></a></li>
+						        	<li><a href="https://www.cambridge.org/core/journals/european-journal-of-applied-mathematics/article/role-of-technology-in-combating-social-crimes-a-modeling-study/5417606A5C28AF520E4B56D8E7443B38" target="_blank"><h1>J.B. Shukla, A. Goyal, K. Agrawal, H. Kushwah and A. Shukla, Role of technology in combating social crimes: A Modeling Study, European Journal of Applied Mathematics, 24 (501--514), 2013.</h1></a></li>
+						        	<li><a href="https://www.sciencedirect.com/science/article/pii/S0011916411003353" target="_blank"><h1>J.B. Shukla, R. Sanghi, A. Goyal and A.K. Misra, Modeling the desalination of saline water by using bacteria and marsh plants, Desalination, 277(1) (113--120), 2011.</h1></a></li>
+						        </ol>
+						    </div>
+			        		<div class="modal-footer">
+			          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        		</div>
+			      		</div>	      
+			    	</div>
+		 	 	</div>
 
-    <!-- END PUBLICATIONS -->
+
+		  		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1" style="vertical-align:middle"><span>INVITED TALKS</span></button>
+
+		  		<!-- Modal -->
+		  		<div class="modal fade" id="myModal1" role="dialog">
+		    		<div class="modal-dialog">
+		    
+		      		<!-- Modal content-->
+			      		<div class="modal-content">
+					        <div class="modal-header">
+					          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+					          	<h4 class="modal-title">INVITED TALKS</h4>
+					        </div>
+					        <div id="public1" class="modal-body">
+					          	<ol>
+						        	<li><h1>A better understanding of hepatitis D virus through modelling, LOYOLA University, USA, 2016</h1></li>
+						        	<li><h1>A better understanding of hepatitis D virus epidemiology through modelling, University of Tokyo, Japan, 2016.</h1></li>
+						        	<li><h1>Impact of delta hepatitis on hepatitis B epidemiology and optimal intervention policies, Postgrad Conference, UNSW Australia, 2015.</h1></li>
+						        	<li><h1>Mathematical modelling of hepatitis D virus (HDV), University of Wollongong, Australia, 2014.</h1></li>
+						        	<li><h1>Modeling dissolved oxygen during biodegradation of organic pollutant(s), University of Wollongong, Australia, 2014.</h1></li>
+						        </ol>	        
+				        	</div>
+		        			<div class="modal-footer">
+		          				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        				</div>
+		      			</div>
+		      
+		    		</div>
+		  		</div>
+
+
+		    	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style="vertical-align:middle"><span>CONFERENCES</span></button>
+
+			  <!-- Modal -->
+				<div class="modal fade" id="myModal2" role="dialog">
+				    <div class="modal-dialog">
+				    
+				      <!-- Modal content-->
+					    <div class="modal-content">
+				        	<div class="modal-header">
+				          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				          		<h4 class="modal-title">CONFERENCES</h4>
+				        	</div>
+				        	<div id="public1" class="modal-body">
+						        <ol>
+							    	<li><h1>The Liver Meeting 2017, AASLD, Oct 20 - 24, 2017 in Washington DC, USA.</h1></li>
+							    	<li><h1>Viral Dynamics: Past, Present, \& Future, May 5 - 7, 2017 in Santa Fe, USA.</h1></li>
+							    	<li><h1>Modeling Viral Infections and Immunity (E1), May 1 - 4, 2017 in Estes Park, USA.</h1></li>
+							    	<li><h1>Systems Approaches in Immunology and Infectious Diseases, Sep 27 - 28, 2016 in Santa Fe, USA.</h1></li>
+							    	<li><h1>ANZIAM conference, Feb 7 - 11, 2016 in Canberra, Australia.</h1></li>
+							    	<li><h1>Annual NSW/ACT ANZIAM Meeting 2015, Nov 25 - 26, 2015 in Sydney, Australia.</h1></li>
+							    	<li><h1>Discrete mathematical models in the life sciences workshop, Feb 6, 2015 in Brisbane, Australia.</h1></li>
+							    	<li><h1>ANZIAM conference, Feb 1-5, 2015 in Gold Coast, Australia.</h1></li>
+							    	<li><h1>The 2015 Annual Meeting for The SMB, June 30 - July 3, 2015 in Atlanta, USA.</h1></li>
+							    	<li><h1>Annual NSW/ACT ANZIAM Meeting, Nov 27-28, 2013 in Sydney, Australia.</h1></li>
+							    	<li><h1>A National Conference on Mathematical Modeling and Computer Simulation with Applications, Feb 17-19, 2012 at BGI, Kanpur under the auspices of ISSMACS.</h1></li>
+							    	<li><h1>An International Workshop on Nonlinear Dynamics, Feb 9-16, 2012 at BGI, Kanpur.</h1></li>
+							    	<li><h1>Mathematical Modeling and Computer Simulation, July 7-9, 2011 at BGI, Kanpur under the auspices of ISSMACS.</h1></li>
+							    </ol>	        
+				        	</div>
+				       		<div class="modal-footer">
+				          		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        	</div>
+				      	</div>
+				    </div>
+			  	</div>
+		  	</div>
+		</div>
+	</div>
+
+
+<!-- END PUBLICATIONS -->
+
+    <!-- Academic Service -->
+   
+    <div id="academicss1">
+    	<a class=heading_top id="academicss"></a>
+    	<div class="heading4">
+			<h1>Academics</h1>
+			<hr>
+		</div>	
+		<div class="container">			
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h2 class="visible-lg visible-md visible-sm">Teaching Experience</h2>				
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h2 class="visible-lg visible-md visible-sm">Journal Reviewer</h2>				
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h2 class="visible-lg visible-md visible-sm">Volunteer Experience</h2>				
+				</div>			
+			</div>
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Calculus, Linear Algebra and Engineering Mathematics, Student Support Scheme, UNSW, Aug 2014 - May 2016.</h3>
+				</div>
+				<div class=" col-lg-2 col-md-2 col-sm-2">
+						<h3 class="visible-lg visible-md visible-sm">Viruses</h3>
+				</div>
+				<div class=" col-lg-2 col-md-2 col-sm-2">
+						<h3 class="visible-lg visible-md visible-sm">Clinical Drug Investigation</h3>
+				</div>			
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Maths school representative on IEEE-UNSW Branch} -- aimed to promote collaborative research between mathematicians and computer engineers, UNSW, 2014 - 2016.</h3>
+				</div>
+			</div>
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h3 class="visible-lg visible-md visible-sm">Mathematics-I (Calculus), Undergraduate students, The LNMIIT, Aug 2012 - Dec 2012.</h3>
+				</div>
+				<div class=" col-lg-2 col-md-2 col-sm-2">
+					<h3 class="visible-lg visible-md visible-sm">Bulletin of Mathematical Biology</h3>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<h3 class="visible-lg visible-md visible-sm">Mathematical Biosciences</h3>
+				</div>				
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h3 class="visible-lg visible-md visible-sm">Volunteer at 'Girls Do The Maths' workshop -- aimed to encourage female high school students to consider mathematics as a career, School of Mathematics & Statistics, UNSW, 2015.</h3>
+				</div>			
+			</div>
+			
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4 ">
+					<h3 class="visible-lg visible-md visible-sm">Database Management Systems and Information Technology Workshop, Undergraduate students, The LNMIIT, Jan 2012 - May 2012.</h3>
+				</div>
+				<div class=" col-lg-2 col-md-2 col-sm-2">
+					<h3 class="visible-lg visible-md visible-sm">Ecological Complexity</h3>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<h3 class="visible-lg visible-md visible-sm">International Journal of Biomathematics</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Postgraduate steering committee member for the first annual postgraduate conference -- aimed to provide a platform for postgraduate research students to showcase their research, School of Mathematics & Statistics, UNSW, 2014.</h3>
+				</div>			
+			</div>
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Computer Organization And Architecture, Undergraduate students, The LNMIIT, Jan 2011 - Apr 2011.</h3>
+				</div>
+				<div class=" col-lg-2 col-md-2 col-sm-2">
+					<h3 class="visible-lg visible-md visible-sm">Mathematical Methods in the Applied Sciences</h3>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<h3 class="visible-lg visible-md visible-sm">Others</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">National conference ICMMACS coordinator -- aimed to bring mathematical modellers together and share their research, Kanpur-India, 2011.</h3>
+				</div>			
+			</div>
+
+			<div class="row row-first edu">
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm">Computer Programming, Undergraduate students, The LNMIIT, Aug 2010 - Dec 2010.</h3>
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3 class="visible-lg visible-md visible-sm"></h3>	
+				</div>
+				<div class=" col-lg-4 col-md-4.5 col-sm-4">
+					<h3></h3>
+				</div>
+			</div>
+
+
+				<!-- MOBILE Devices -->
+			<div class="row row-first edu adm">
+				<div class="col-xs-12">
+					<h2 class="visible-xs">Teaching Experience</h2>
+					<ol class="visible-xs">
+						<li><h3 class="visible-xs">Calculus, Linear Algebra and Engineering Mathematics, Student Support Scheme, UNSW, Aug 2014 - May 2016.</h3></li>
+						<li><h3 class="visible-xs">Mathematics-I (Calculus), Undergraduate students, The LNMIIT, Aug 2012 - Dec 2012.</h3></li>
+						<li><h3 class="visible-xs">Database Management Systems and Information Technology Workshop, Undergraduate students, The LNMIIT, Jan 2012 - May 2012.</h3></li>
+						<li><h3 class="visible-xs">Computer Organization And Architecture, Undergraduate students, The LNMIIT, Jan 2011 - Apr 2011.</h3></li>
+						<li><h3 class="visible-xs">Computer Programming, Undergraduate students, The LNMIIT, Aug 2010 - Dec 2010.</h3></li>
+					</ol>
+				</div>
+				<hr class="visible-xs">
+
+				<div  class="col-xs-12">
+					<h2 class="visible-xs">Journal Reviewer</h2>
+					<ol class="visible-xs">
+						<li><h3 class="visible-xs">Viruses</h3></li>
+						<li><h3 class="visible-xs">Clinical Drug Investigation</h3></li>
+						<li><h3 class="visible-xs">Bulletin of Mathematical Biology</h3></li>
+						<li><h3 class="visible-xs">Mathematical Biosciences</h3></li>
+						<li><h3 class="visible-xs">Ecological Complexity</h3></li>
+						<li><h3 class="visible-xs">International Journal of Biomathematics</h3></li>
+						<li><h3 class="visible-xs">Mathematical Methods in the Applied Sciences.</h3></li>
+						<li><h3 class="visible-xs">Others</h3></li>
+					</ol>
+				</div>
+				<hr class="visible-xs">
+
+				<div  class="col-xs-12">
+					<h2 class="visible-xs">Volunteer Experience</h2>
+					<ol class="visible-xs">
+						<li><h3 class="visible-xs">Maths school representative on IEEE-UNSW Branch} -- aimed to promote collaborative research between mathematicians and computer engineers, UNSW, 2014 - 2016.</h3></li>
+						<li><h3 class="visible-xs">Volunteer at 'Girls Do The Maths' workshop -- aimed to encourage female high school students to consider mathematics as a career, School of Mathematics & Statistics, UNSW, 2015.</h3></li>
+						<li><h3 class="visible-xs">Postgraduate steering committee member for the first annual postgraduate conference -- aimed to provide a platform for postgraduate research students to showcase their research, School of Mathematics & Statistics, UNSW, 2014.</h3></li>
+						<li><h3 class="visible-xs">National conference ICMMACS coordinator -- aimed to bring mathematical modellers together and share their research, Kanpur-India, 2011.</h3></li>
+					</ol>
+				</div>			
+			</div>
+		</div>
+		<br><br>
+	</div>
+
+		<!-- END ACADEMIC SERVICE -->
     
 	<!-- AWARDS -->
+	<a class=heading_top id="awardss"></a>
 	<section id="awardss">
-		<h1 class="ribbon">
+    	<div class="heading5">
+			<h1>Honours and Awards</h1>
+			<hr>
+		</div>
+<!-- 		<h1 class="ribbon">
    			<strong class="ribbon-content">HONOURS and AWARDS</strong>
-		</h1>
+		</h1> -->
 		<div class="container">
 			<div id="timeline">
 				<div class="tl-block">
@@ -435,10 +731,11 @@
 			</div> <!-- end container -->
 		</div><!--  end timeline -->
 	</section>
+
 	<!-- END AWARDS -->
 
 	<!-- FOOTER -->
-	<footer id="contct" class="panel-footer">
+	<footer id="contct"  class="panel-footer">
 	    <div class="container">
 		    <div class="row">
 		    	<section class="col-sm-6">
@@ -476,7 +773,7 @@
         			</div><!--End container-->
 		        </section>
 		    	<section class="col-sm-6">
-		    		<h1 class="text-center">Contact Us</h1>
+		    		<h1  class="text-center">Contact Us</h1>
 		    		<form class="quote">
   						<div>
   							<input type="text" placeholder="Name">
@@ -496,13 +793,33 @@
 		    </div>	        
 	    </div><!-- End Footer -->
   </footer>
+<!-- </div> -->
 			
 	
 
 	<!--  -->
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
+<!--   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js"></script> -->
+  	<!-- <script>
+  		var shiftWindow = function() { scrollBy(0, -100) };
+		if (location.hash) shiftWindow();
+			window.addEventListener("hashchange", shiftWindow);
+		// 	window.onscroll = function() {myFunction() 
+		// 	};
+
+		// var header = document.getElementById("myHeader");
+		// var sticky = header.offsetTop;
+		// function myFunction() {
+		//   if (window.pageYOffset > sticky) {
+		//     header.classList.add("sticky");
+		//   } 
+		//   else {
+		//     header.classList.remove("sticky");
+		//   }
+		// }
+	</script>
+ -->
 </body>
 </html>
